@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Exercício 10</title>
+    <style>
+      label,
+      button {
+        margin-top: 10px;
+      }
+      form {
+        display: flex;
+        flex-direction: column;
+        width: fit-content;
+      }
+      input[type="number"]::-webkit-inner-spin-button {
+        -webkit-appearance: none;
+      }
+    </style>
+  </head>
+  <body>
+    <form>
+      <label for="nome">Nome:</label>
+      <input type="text" name="nome" id="nome" />
+      <label for="pessoa">Tipo de Pessoa:</label>
+      <div>
+        <input
+          type="radio"
+          name="pessoa"
+          id="fisica"
+          value="fisica"
+          onclick="verificarRadio()"
+        />
+        <label for="fisica">Física</label>
+      </div>
+      <div>
+        <input
+          type="radio"
+          name="pessoa"
+          id="juridica"
+          value="juridica"
+          onclick="verificarRadio()"
+        />
+        <label for="juridica">Jurídica</label>
+      </div>
+      <label for="cpf">CPF:</label>
+      <input type="text" name="cpf" id="cpf" disabled />
+      <label for="cnpj">CNPJ:</label>
+      <input type="text" name="cnpj" id="cnpj" disabled />
+      <label for="data-nasc">Data de Nascimento:</label>
+      <input type="date" name="data-nasc" id="data-nasc" disabled />
+      <label for="endereco">Endereço:</label>
+      <input type="text" name="endereco" id="endereco" />
+      <label for="cep">CEP:</label>
+      <input type="number" name="cep" id="cep" />
+      <label for="telefone">Telefone:</label>
+      <input type="number" name="telefone" id="telefone" />
+      <label for="email">Email:</label>
+      <input type="email" name="email" id="email" />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+  <script src="Ex10.js"></script>
+</html>
